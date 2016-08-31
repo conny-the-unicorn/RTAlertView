@@ -26,9 +26,9 @@
     if (self != nil)
     {
         // Load XIB
-        NSArray *xibArray = [[NSBundle mainBundle] loadNibNamed:@"RTAlertViewDoubleTextFieldView"
-                                                          owner:self
-                                                        options:nil];
+        NSArray *xibArray = [[NSBundle bundleForClass:[RTAlertViewDoubleTextFieldView class]] loadNibNamed:@"RTAlertViewDoubleTextFieldView"
+                                                                                                              owner:self
+                                                                                                            options:nil];
         
         for (id xibObject in xibArray)
         {

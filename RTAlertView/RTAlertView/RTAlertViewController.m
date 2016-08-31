@@ -73,7 +73,7 @@ static CGFloat kRtAlertViewMotionEffectRelativeValue = 15.0f;
                bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:@"RTAlertViewController"
-                           bundle:nibBundleOrNil];
+                           bundle:[NSBundle bundleForClass:[RTAlertViewController class]]];
     if (self != nil)
     {
         // Initialize properties to default values

@@ -60,7 +60,8 @@ static CGFloat kRtAlertViewTopConstraintConstantAdjustmentHorizontalDivider = -0
     if (self != nil)
     {
         // Load XIB
-        NSArray *xibArray = [[NSBundle mainBundle] loadNibNamed:@"RTAlertViewRecursiveButtonContainerView"
+
+        NSArray *xibArray = [[NSBundle bundleForClass:[RTAlertViewRecursiveButtonContainerView class]] loadNibNamed:@"RTAlertViewRecursiveButtonContainerView"
                                                           owner:self
                                                         options:nil];
 

@@ -26,9 +26,9 @@
     if (self != nil)
     {
         // Load XIB
-        NSArray *xibArray = [[NSBundle mainBundle] loadNibNamed:@"RTAlertViewSingleTextFieldView"
-                                                          owner:self
-                                                        options:nil];
+        NSArray *xibArray = [[NSBundle bundleForClass:[RTAlertViewSingleTextFieldView class]] loadNibNamed:@"RTAlertViewSingleTextFieldView"
+                                                                                                     owner:self
+                                                                                                   options:nil];
         
         for (id xibObject in xibArray)
         {
@@ -42,7 +42,6 @@
 
     return self;
 }
-
 
 #pragma mark - UIView methods
 
