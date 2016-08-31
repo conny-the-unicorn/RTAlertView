@@ -11,7 +11,7 @@
 #import "RTAlertViewRecursiveButtonContainerView.h"
 #import "RTAlertViewSingleTextFieldView.h"
 #import "RTAlertViewDoubleTextFieldView.h"
-#import <RBBSpringAnimation.h>
+#import "RBBSpringAnimation.h"
 
 
 // Constants
